@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_person"
+        android:tint="@color/colorBackgroundLight"
+        app:layout_constraintBottom_toBottomOf="@+id/f_main_lbl_mobile"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/f_main_lbl_name" />
+
+    <TextView
+        android:id="@+id/f_main_lbl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="35dp"
+        android:text="Demo Name"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/f_main_lbl_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="800761xxxx"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/f_main_lbl_name"
+        app:layout_constraintTop_toBottomOf="@id/f_main_lbl_name" />
+
+    <ImageButton
+        android:id="@+id/f_main_btn_edit_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorBackgroundLight"
+        android:elevation="16dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/f_main_lbl_name" />
+
+    <LinearLayout
+        android:id="@+id/f_main_ll_request"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/gradient_round_corner"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        android:padding="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/f_main_ll_history"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/f_main_lbl_mobile">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_add"
+            android:tint="@color/colorBackgroundLight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/create_issue"
+            android:textAlignment="center"
+            android:textColor="@color/colorBackgroundLight"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f_main_ll_history"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/gradient_round_corner"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        android:padding="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/f_main_ll_request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/f_main_ll_request"
+        app:layout_constraintTop_toTopOf="@+id/f_main_ll_request">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_history"
+            android:tint="@color/colorBackgroundLight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/my_reports"
+            android:textAlignment="center"
+            android:textColor="@color/colorBackgroundLight"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f_main_ll_help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_round_corner"
+        android:backgroundTintMode="screen"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        android:padding="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/f_main_ll_history"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/f_main_ll_request"
+        app:layout_constraintTop_toBottomOf="@+id/f_main_ll_request">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_help"
+            android:tint="@color/colorBackgroundLight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/help"
+            android:textAlignment="center"
+            android:textColor="@color/colorBackgroundLight"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

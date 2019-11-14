@@ -1,0 +1,23 @@
+<resources>
+    <string name="profile_data">in.kubre.rddclient.PROFILE_DATA</string>
+    <string name="app_name">RDD Client</string>
+    <string name="help">Help</string>
+    <string name="history">History</string>
+    <string name="photo">Photo</string>
+    <string name="address_optional">Address (Optional)</string>
+    <string name="request_maintenance">Request Maintenance</string>
+    <string name="location">Location</string>
+    <string name="submit">Submit</string>
+    <string name="open_issue">Open Issue</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="save">Save</string>
+    <string name="create_issue">Report Pothole</string>
+    <string name="my_reports">My Reports</string>
+    <string name="depth_in_meters">Depth (in Meters)</string>
+    <string name="width_in_meters">Width (in Meters)</string>
+    <string name="tap_above_to_click_photo">Tap above to click photo</string>
+    <string name="details">Details</string>
+    <string name="login">Login</string>
+</resources>

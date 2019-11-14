@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/gradient_round_corner"
+    android:backgroundTint="@color/colorBackgroundLight"
+    android:elevation="26dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/li_request_img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/li_request_txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Accpeted"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/li_request_txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="This is demo content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/li_request_img_photo"
+        app:layout_constraintStart_toStartOf="@id/li_request_img_photo"
+        app:layout_constraintTop_toBottomOf="@id/li_request_img_photo" />
+
+    <TextView
+        android:id="@+id/li_request_txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="28/12/2019"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@id/li_request_img_photo"
+        app:layout_constraintStart_toStartOf="@id/li_request_img_photo"
+        app:layout_constraintTop_toBottomOf="@id/li_request_img_photo" />
+</LinearLayout>
