@@ -38,7 +38,7 @@
         android:id="@+id/f_main_lbl_mobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="800761xxxx"
+        android:text="80xxxxxxxx"
         android:textColor="#fff"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/f_main_lbl_name"
